@@ -1,0 +1,14 @@
+diff -up libgtop-2.28.0/include/glibtop/cpu.h~ libgtop-2.28.0/include/glibtop/cpu.h
+--- libgtop-2.28.0/include/glibtop/cpu.h~	2009-04-18 19:29:49.000000000 -0400
++++ libgtop-2.28.0/include/glibtop/cpu.h	2010-06-29 23:40:18.788824086 -0400
+@@ -53,8 +53,9 @@ G_BEGIN_DECLS
+ /* Nobody should really be using more than 4 processors.
+    Yes we are :)
+    Nobody should really be using more than 32 processors.
++   Bumped to 256. -ssp
+ */
+-#define GLIBTOP_NCPU		32
++#define GLIBTOP_NCPU		256
+ 
+ typedef struct _glibtop_cpu	glibtop_cpu;
+ 

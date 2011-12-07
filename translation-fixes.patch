@@ -1,0 +1,297 @@
+--- a/po/ja.po	2010-05-06 14:51:01.908029939 +0530
++++ a/po/ja.po	2010-05-06 14:51:21.253056562 +0530
+@@ -10,14 +10,14 @@ 
+ msgstr ""
+ "Project-Id-Version: libgtop trunk\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2007-07-08 01:03+0900\n"
++"POT-Creation-Date: 2010-03-29 14:30+0530\n"
+ "PO-Revision-Date: 2007-07-08 01:03+0900\n"
+ "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
+ "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"Plural-Forms: nplurals=2; plural=1;\n"
+ 
+ #: ../lib/read.c:51
+ #, c-format
+@@ -44,23 +44,23 @@ 
+ msgstr[0] " %dバイトの書き込み"
+ msgstr[1] " %dバイトの書き込み"
+ 
+-#: ../src/daemon/gnuserv.c:458
++#: ../src/daemon/gnuserv.c:455
+ msgid "Enable debugging"
+ msgstr "デバッグを有効にする"
+ 
+-#: ../src/daemon/gnuserv.c:460
++#: ../src/daemon/gnuserv.c:457
+ msgid "Enable verbose output"
+ msgstr "詳細な出力にする"
+ 
+-#: ../src/daemon/gnuserv.c:462
++#: ../src/daemon/gnuserv.c:459
+ msgid "Don't fork into background"
+ msgstr "子プロセスをバックグラウンドに回さない"
+ 
+-#: ../src/daemon/gnuserv.c:464
++#: ../src/daemon/gnuserv.c:461
+ msgid "Invoked from inetd"
+ msgstr "`inetd` から起動する"
+ 
+-#: ../src/daemon/gnuserv.c:498
++#: ../src/daemon/gnuserv.c:495
+ #, c-format
+ msgid "Run '%s --help' to see a full list of available command line options.\n"
+ msgstr ""
+--- a/po/ko.po	2010-05-06 14:51:01.913031260 +0530
++++ a/po/ko.po	2010-05-06 14:51:17.871154281 +0530
+@@ -1,66 +1,68 @@ 
+-# libgtop ko.po
+-# Sung-Hyun Nam <namsh@lgic.co.kr>, 1998
+-# Changwoo Ryu <cwryu@debian.org>, 2002, 2004, 2005, 2008.
++# translation of libgtop-2.0.po to Korean
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ #
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: libgtop\n"
++"Project-Id-Version: libgtop-2.0\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2008-02-26 19:13+0900\n"
+-"PO-Revision-Date: 2009-01-29 16:18+0900\n"
+-"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+-"Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
++"POT-Creation-Date: 2010-03-29 14:30+0530\n"
++"PO-Revision-Date: 2010-04-20 13:52+1000\n"
++"Last-Translator: \n"
++"Language-Team: Korean <en@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "Plural-Forms: nplurals=1; plural=0;\n"
++"X-Generator: KBabel 1.11.4\n"
+ 
+ #: ../lib/read.c:51
+ #, c-format
+ msgid "read %d byte"
+ msgid_plural "read %d bytes"
+-msgstr[0] "%d바이트 읽음"
++msgstr[0] "%d 바이트 읽음"
+ 
+ #: ../lib/read_data.c:51
+ msgid "read data size"
+-msgstr "읽은 데이터 크기"
++msgstr "데이터 사이즈 읽음"
+ 
+ #: ../lib/read_data.c:70
+ #, c-format
+ msgid "read %lu byte of data"
+ msgid_plural "read %lu bytes of data"
+-msgstr[0] "데이터 %lu바이트 읽음"
++msgstr[0] "%lu 바이트 데이터 읽음"
+ 
+ #: ../lib/write.c:51
+ #, c-format
+ msgid "wrote %d byte"
+ msgid_plural "wrote %d bytes"
+-msgstr[0] "%d바이트 씀"
++msgstr[0] "%d 바이트 씀"
+ 
+-#: ../src/daemon/gnuserv.c:458
++#: ../src/daemon/gnuserv.c:455
+ msgid "Enable debugging"
+-msgstr "디버깅 사용"
++msgstr "디버깅 활성화"
+ 
+-#: ../src/daemon/gnuserv.c:460
++#: ../src/daemon/gnuserv.c:457
+ msgid "Enable verbose output"
+-msgstr "많은 출력 사용"
++msgstr "자세한 출력 활성화"
+ 
+-#: ../src/daemon/gnuserv.c:462
++#: ../src/daemon/gnuserv.c:459
+ msgid "Don't fork into background"
+-msgstr "백그라운드로 실행 안 함"
++msgstr "백그라운드로 실행하지 않기"
+ 
+-#: ../src/daemon/gnuserv.c:464
++#: ../src/daemon/gnuserv.c:461
+ msgid "Invoked from inetd"
+-msgstr "inetd에 의해 불림"
++msgstr "inetd에서 실행됨"
+ 
+-#: ../src/daemon/gnuserv.c:498
++#: ../src/daemon/gnuserv.c:495
+ #, c-format
+ msgid "Run '%s --help' to see a full list of available command line options.\n"
+-msgstr "사용할 수 있는 명령행 옵션을 모두 보려면 '%s --help'라고 실행하십시오.\n"
++msgstr "'%s --help'를 실행하면 사용할 수 있는 모든 명령행 옵션을 볼 수 있습니다.\n"
+ 
+ #: ../sysdeps/osf1/siglist.c:27 ../sysdeps/sun4/siglist.c:27
+ msgid "Hangup"
+-msgstr "끊어짐"
++msgstr "멈춤"
+ 
+ #: ../sysdeps/osf1/siglist.c:28 ../sysdeps/sun4/siglist.c:28
+ msgid "Interrupt"
+@@ -68,43 +70,43 @@ 
+ 
+ #: ../sysdeps/osf1/siglist.c:29 ../sysdeps/sun4/siglist.c:29
+ msgid "Quit"
+-msgstr "끝내기"
++msgstr "종료"
+ 
+ #: ../sysdeps/osf1/siglist.c:30 ../sysdeps/sun4/siglist.c:30
+ msgid "Illegal instruction"
+-msgstr "잘못된 기계명령"
++msgstr "잘못된 명령어"
+ 
+ #: ../sysdeps/osf1/siglist.c:31 ../sysdeps/sun4/siglist.c:31
+ msgid "Trace trap"
+-msgstr "추적 트랩"
++msgstr "추적 트랩(trace trap)"
+ 
+ #: ../sysdeps/osf1/siglist.c:32 ../sysdeps/sun4/siglist.c:32
+ msgid "Abort"
+-msgstr "중지"
++msgstr "중단"
+ 
+ #: ../sysdeps/osf1/siglist.c:33 ../sysdeps/sun4/siglist.c:33
+ msgid "EMT error"
+-msgstr "EMT 에러"
++msgstr "EMT 오류"
+ 
+ #: ../sysdeps/osf1/siglist.c:34 ../sysdeps/sun4/siglist.c:34
+ msgid "Floating-point exception"
+-msgstr "실수연산 예외"
++msgstr "부동소수점 예외상황"
+ 
+ #: ../sysdeps/osf1/siglist.c:35 ../sysdeps/sun4/siglist.c:35
+ msgid "Kill"
+-msgstr "죽임"
++msgstr "강제종료"
+ 
+ #: ../sysdeps/osf1/siglist.c:36 ../sysdeps/sun4/siglist.c:36
+ msgid "Bus error"
+-msgstr "버스 에러"
++msgstr "버스 오류"
+ 
+ #: ../sysdeps/osf1/siglist.c:37 ../sysdeps/sun4/siglist.c:37
+ msgid "Segmentation violation"
+-msgstr "세그먼테이션 위반"
++msgstr "세그멘테이션 위반"
+ 
+ #: ../sysdeps/osf1/siglist.c:38 ../sysdeps/sun4/siglist.c:38
+ msgid "Bad argument to system call"
+-msgstr "시스템 콜에 잘못된 인자"
++msgstr "시스템 호출시 잘못된 인수"
+ 
+ #: ../sysdeps/osf1/siglist.c:39 ../sysdeps/sun4/siglist.c:39
+ msgid "Broken pipe"
+@@ -112,23 +114,23 @@ 
+ 
+ #: ../sysdeps/osf1/siglist.c:40 ../sysdeps/sun4/siglist.c:40
+ msgid "Alarm clock"
+-msgstr "알람 클럭"
++msgstr "알람 시계"
+ 
+ #: ../sysdeps/osf1/siglist.c:41 ../sysdeps/sun4/siglist.c:41
+ msgid "Termination"
+-msgstr "Termination"
++msgstr "종료"
+ 
+ #: ../sysdeps/osf1/siglist.c:42 ../sysdeps/sun4/siglist.c:42
+ msgid "Urgent condition on socket"
+-msgstr "소켓에 위급한 조건"
++msgstr "소켓에 긴급 상황"
+ 
+ #: ../sysdeps/osf1/siglist.c:43 ../sysdeps/sun4/siglist.c:43
+ msgid "Stop"
+-msgstr "중지"
++msgstr "정지"
+ 
+ #: ../sysdeps/osf1/siglist.c:44 ../sysdeps/sun4/siglist.c:44
+ msgid "Keyboard stop"
+-msgstr "키보드 중지"
++msgstr "키보드 중단"
+ 
+ #: ../sysdeps/osf1/siglist.c:45 ../sysdeps/sun4/siglist.c:45
+ msgid "Continue"
+@@ -136,39 +138,39 @@ 
+ 
+ #: ../sysdeps/osf1/siglist.c:46 ../sysdeps/sun4/siglist.c:46
+ msgid "Child status has changed"
+-msgstr "하위 프로세스 상태가 바뀌었습니다"
++msgstr "자식 상태가 바뀜"
+ 
+ #: ../sysdeps/osf1/siglist.c:47 ../sysdeps/sun4/siglist.c:47
+ msgid "Background read from tty"
+-msgstr "tty에서 백그라운드 읽기"
++msgstr "터미널(tty)에서 백그라운드로 읽음"
+ 
+ #: ../sysdeps/osf1/siglist.c:48 ../sysdeps/sun4/siglist.c:48
+ msgid "Background write to tty"
+-msgstr "tty로 백그라운드 쓰기"
++msgstr "터미널(tty)에 백그라운드로 씀"
+ 
+ #: ../sysdeps/osf1/siglist.c:49 ../sysdeps/sun4/siglist.c:49
+ msgid "I/O now possible"
+-msgstr "I/O 이제 가능"
++msgstr "I/O가 이제 가능해짐"
+ 
+ #: ../sysdeps/osf1/siglist.c:50 ../sysdeps/sun4/siglist.c:50
+ msgid "CPU limit exceeded"
+-msgstr "CPU 한계 초과"
++msgstr "CPU 한계에 도달"
+ 
+ #: ../sysdeps/osf1/siglist.c:51 ../sysdeps/sun4/siglist.c:51
+ msgid "File size limit exceeded"
+-msgstr "파일 크기 한계 초과"
++msgstr "파일 크기 한계에 도달"
+ 
+ #: ../sysdeps/osf1/siglist.c:52 ../sysdeps/sun4/siglist.c:52
+ msgid "Virtual alarm clock"
+-msgstr "가상 알람 클럭"
++msgstr "가상 알람 시계"
+ 
+ #: ../sysdeps/osf1/siglist.c:53 ../sysdeps/sun4/siglist.c:53
+ msgid "Profiling alarm clock"
+-msgstr "Profiling 알람 클럭"
++msgstr "프로파일 알람 시계"
+ 
+ #: ../sysdeps/osf1/siglist.c:54 ../sysdeps/sun4/siglist.c:54
+ msgid "Window size change"
+-msgstr "창 크기 바뀜"
++msgstr "윈도 사이즈 변경"
+ 
+ #: ../sysdeps/osf1/siglist.c:55 ../sysdeps/sun4/siglist.c:55
+ msgid "Information request"
+@@ -176,20 +178,9 @@ 
+ 
+ #: ../sysdeps/osf1/siglist.c:56 ../sysdeps/sun4/siglist.c:56
+ msgid "User defined signal 1"
+-msgstr "사용자 정의 신호 1"
++msgstr "사용자 정의 시그널 1"
+ 
+ #: ../sysdeps/osf1/siglist.c:57 ../sysdeps/sun4/siglist.c:57
+ msgid "User defined signal 2"
+-msgstr "사용자 정의 신호 2"
++msgstr "사용자 정의 시그널 2"
+ 
+-#~ msgid "DEBUG"
+-#~ msgstr "디버그"
+-
+-#~ msgid "VERBOSE"
+-#~ msgstr "VERBOSE"
+-
+-#~ msgid "NO-DAEMON"
+-#~ msgstr "NO-DAEMON"
+-
+-#~ msgid "INETD"
+-#~ msgstr "INETD"
